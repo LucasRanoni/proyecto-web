@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { CaracteristicasComponent } from './caracteristicas/caracteristicas.component';
+import { HomeComponent } from './home/home.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 const routes : Routes = [
-  { path: '', redirectTo : 'home', pathMatch : 'full' },
-  { path: 'home', component: AppComponent },
-  {path : 'servicios' , component : ServiciosComponent},
-  {path: '**', component : ServiciosComponent}
+  { path: '', redirectTo : 'home' , pathMatch : 'full' },
+   { path: 'home', component: HomeComponent },
+   { path: 'nosotros', component: NosotrosComponent },
+   {path : 'caracteristicas' , component : CaracteristicasComponent},
+   {path: 'contacto', component : ContactoComponent}
 ];
   
 @NgModule({
@@ -19,7 +23,10 @@ const routes : Routes = [
     AppComponent,
     ContactoComponent,
     ServiciosComponent,
-    CaracteristicasComponent
+    CaracteristicasComponent,
+    HomeComponent,
+    NosotrosComponent,
+    EquipoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { HostBinding } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.css']
 })
-export class ContactoComponent implements OnInit {
 
+export class ContactoComponent implements OnInit {
+  
+  @HostBinding('attr.banner') cssClass = 'fixed-top';
   constructor() { }
 
   ngOnInit(): void {
