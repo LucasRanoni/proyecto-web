@@ -31,7 +31,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/popper.min.js"
-              ]
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "proyecto-web"
+    }
+  },
+  "defaultProject": "proyecto-web",
+  "cli": {
+    "analytics": false
+  }
 }
